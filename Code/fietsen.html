@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Fluitende Fietser - Verkoop</title>
+    <link rel="stylesheet" href="/Code/style.css">
+    <link rel="icon" href="">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Assets/Images/logo.png" alt="Logo De Fluitende Fietser"> 
+            <h1>De Fluitende Fietser</h1>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Zoeken...">
+            <button type="button">🔍</button>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="fietsen.html">Fietsen</a></li>
+            <li><a href="verhuur.html">Verhuur</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="over.html">Over ons</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="verkoop">
+            <h1>Te koop aangeboden</h1>
+            <div class="fietsen-container">
+                <div class="fiets">
+                    <img src="/Assets/Images/stadsfiets.jpg" alt="Stadsfiets">
+                    <div class="fiets-info">
+                        <h3>Stadsfiets</h3>
+                        <p>Voor dagelijks gebruik, een comfortabele stadsfiets met 7 versnellingen.</p>
+                        <p class="prijs">€499</p>
+                    </div>
+                    <button class="koop-knop" onclick="voegToeAanMand('Stadsfiets', 499)">Toevoegen aan winkelmand</button>
+                </div>
+                <div class="fiets">
+                    <img src="/Assets/Images/racefiets.jpg" alt="Racefiets">
+                    <div class="fiets-info">
+                        <h3>Racefiets</h3>
+                        <p>Lichte en snelle racefiets voor de sportievelingen. Dit is de favoriet van onze monteur Mo, omdat hij snel en vertrouwbaar is.</p>
+                        <p class="prijs">€999</p>
+                    </div>
+                    <button class="koop-knop">Koop nu</button>
+                </div>
+                <div class="fiets">
+                    <img src="/Assets/Images/elektrischefiets.jpg" alt="Elektrische fiets">
+                    <div class="fiets-info">
+                        <h3>Elektrische fiets</h3>
+                        <p>Krachtige e-bike met een actieradius tot 100 km. Voor de snelle jelle's onder ons.</p>
+                        <p class="prijs">€1.799</p>
+                    </div>
+                    <button class="koop-knop">Koop nu</button>
+                </div>
+                <div class="fiets">
+                    <img src="/Assets/Images/mountainbike.jpg" alt="Mountainbike">
+                    <div class="fiets-info">
+                        <h3>Mountainbike</h3>
+                        <p>Voor de echte avonturier, een robuuste mountainbike voor ruig terrein.</p>
+                        <p class="prijs">€1.299</p>
+                    </div>
+                    <button class="koop-knop">Koop nu</button>
+                </div>
+                <div class="fiets">
+                    <img src="/Assets/Images/vouwfiets.jpg" alt="Vouwfiets">
+                    <div class="fiets-info">
+                        <h3>Vouwfiets</h3>
+                        <p>Voor hipsters, een handige vouwfiets voor woon-werkverkeer.</p>
+                        <p class="prijs">€699</p>
+                    </div>
+                    <button class="koop-knop">Koop nu</button>
+                </div>
+                <div class="fiets">
+                    <img src="/Assets/Images/bakfiets.jpg" alt="Bakfiets">
+                    <div class="fiets-info">
+                        <h3>Bakfiets</h3>
+                        <p>Ruime bakfiets ideaal voor gezinnen. Neem je kinderen mee op avontuur!</p>
+                        <p class="prijs">€1.999</p>
+                    </div>
+                    <button class="koop-knop">Koop nu</button>
+                </div>
+                <div class="fiets">
+                    <img src="/Assets/Images/hybridefiets.jpg" alt="Hybride fiets">
+                    <div class="fiets-info">
+                        <h3>Hybride fiets</h3>
+                        <p>Voor de multi-taskers, de perfecte mix tussen een stadsfiets en een mountainbike.</p>
+                        <p class="prijs">€899</p>
+                    </div>
+                    <button class="koop-knop">Koop nu</button>
+                </div>
+                <div class="fiets">
+                    <img src="/Assets/Images/kinderfiets.jpg" alt="Kinderfiets">
+                    <div class="fiets-info">
+                        <h3>Kinderfiets</h3>
+                        <p>Voor kinderen tot en met 4 jaar, een stevige kinderfiets met zijwieltjes.</p>
+                        <p class="prijs">€299</p>
+                    </div>
+                    <button class="koop-knop">Koop nu</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="over.html">Over ons</a>
+            <a href="contact.html">Contact info</a>
+            <a href="mailto:info@fluitendefietser.nl">info@fluitendefietser.nl</a>
+            <a href="steun.html">Wij steunen</a>
+            <a href="ff.html">Het Fluitend Fonds</a>
+            <a href="https://www.facebook.com/fietsmagazine" target="_blank">Facebook</a>
+        </div>
+        <div class="voorwaarden">
+            <a href="algemene_voorwaarden.html" download>Algemene Voorwaarden</a>
+        </div>
+        <div class="kvk-btw">
+            <p>KVK: 88599665 | BTW NL999888492Z09</p>
+        </div>
+        <div class="copyright">
+            <p>© 2022 Fluitende Fietser</p>
+        </div>
+        <div class="moving-biker">
+            <img src="/Assets/Images/fiets-standaard-footer.png" alt="Bewegende fietser" id="biker" onload="MoveBiker()">
+        </div>
+    </footer>
+
+    <script src="/Code/script.js"></script>
+</body>
+</html>

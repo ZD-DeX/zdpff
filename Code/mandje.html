@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winkelmand - De Fluitende Fietser</title>
+    <link rel="stylesheet" href="/Code/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Assets/Images/logo.png" alt="Logo De Fluitende Fietser">
+            <h1>De Fluitende Fietser</h1>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Zoeken...">
+            <button type="button">🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Winkelmand</h1>
+        <div id="mand-container"></div>
+    </main>
+
+    <footer>
+        <p>© 2022 Fluitende Fietser</p>
+    </footer>
+
+    <script src="/Code/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", toonWinkelmand);
+    </script>
+</body>
+</html>

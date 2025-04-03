@@ -1,0 +1,10 @@
+[
+    { "type": "Stadsfiets", "prijs": "€10" },
+    { "type": "Mountainbike", "prijs": "€15" },
+    { "type": "Elektrische fiets", "prijs": "€25" },
+    { "type": "Racefiets", "prijs": "€30" },
+    { "type": "Vouwfiets", "prijs": "€10" },
+    { "type": "Bakfiets", "prijs": "€35" },
+    { "type": "Hybride-Fiets", "prijs": "€25" },
+    { "type": "Kinderfiets", "prijs": "€5" }
+]

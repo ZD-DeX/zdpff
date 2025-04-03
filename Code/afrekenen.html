@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afrekenen - De Fluitende Fietser</title>
+    <link rel="stylesheet" href="/Code/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Assets/Images/logo.png" alt="Logo De Fluitende Fietser">
+            <h1>De Fluitende Fietser</h1>
+        </div>
+    </header>
+
+    <main>
+        <h1>Afrekenen</h1>
+        <form id="afreken-form">
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="adres">Adres:</label>
+            <input type="text" id="adres" required>
+
+            <label for="stad">Stad:</label>
+            <input type="text" id="stad" required>
+
+            <label for="postcode">Postcode:</label>
+            <input type="text" id="postcode" required>
+
+            <button type="submit">Bestelling plaatsen</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2022 Fluitende Fietser</p>
+    </footer>
+
+    <script>
+        document.getElementById("afreken-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Bedankt voor je bestelling!");
+            window.location.href = "homepage.html";
+        });
+    </script>
+</body>
+</html>

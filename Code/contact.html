@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Fluitende Fietser</title>
+    <link rel="stylesheet" href="/Code/style.css"> <!-- Link naar een extern CSS-bestand -->
+    <link rel="icon" href=""> <!-- Favicon -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Assets/Images/logo.png" alt="Logo De Fluitende Fietser"> <!-- Logo afbeelding -->
+            <h1>De Fluitende Fietser</h1>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Zoeken...">
+            <button type="button">🔍</button> <!-- Zoekknop -->
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="fietsen.html">Fietsen</a></li>
+            <li><a href="verhuur.html">Verhuur</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="over.html">Over ons</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="contactBox">
+            <div class="container" id="vraagBox">
+                <h2>Neem contact op.</h2>
+                <form action="contact.php" method="post">
+                    <label for="naam">Voornaam:</label><br>
+                    <input type="text" id="naam" name="naam" required><br>
+                    <label for="achternaam">Achternaam:</label><br>
+                    <input type="text" id="achternaam" name="achternaam" required><br>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="vraag">Vraag:</label><br>
+                    <textarea id="vraag" name="vraag" required></textarea><br>
+                    <input type="submit" value="Verstuur">
+                </form>
+            </div>
+            <div class="container" id="contactInfo">
+                <h2>Contact informatie</h2>
+                <div id="contactContent">
+                    <div id="contact">
+                        <p>Telefoon: 06-12345678</p>
+                        <p>E-mail:
+                            <a href="mailto:info@fluitendefietser.nl">info@fluitendefietser.nl</a>
+                        </p>
+                    </div>
+                    <div id="adres">
+                        <p>Adres: <br>
+                            De Fluitende Fietser <br>
+                            Papenvoortse Heide 7f <br>
+                            5674 IA Neunen
+                        </p>
+                        <p>Openingstijden: <br>
+                            Maandag t/m vrijdag: 09:00 - 18:00 <br>
+                            Zaterdag: 09:00 - 20:00 <br>
+                            Zondag: Gesloten
+                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2485.123228178295!2d5.593731061449439!3d51.47425234851256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTHCsDI4JzI3LjMiTiA1wrAzNSc0NC4wIkU!5e0!3m2!1sen!2snl!4v1742217175271!5m2!1sen!2snl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="over.html">Over ons</a>
+            <a href="contact.html">Contact info</a>
+            <a href="mailto:info@fluitendefietser.nl">info@fluitendefietser.nl</a>
+            <a href="steun.html">Wij steunen</a>
+            <a href="ff.html">Het Fluitend Fonds</a>
+            <a href="https://www.facebook.com/fietsmagazine" target="_blank">Facebook</a>
+        </div>
+        <div class="voorwaarden">
+            <a href="algemene_voorwaarden.html" download>Algemene Voorwaarden</a>
+        </div>
+        <div class="kvk-btw">
+            <p>KVK: 88599665 | BTW NL999888492Z09</p>
+        </div>
+        <div class="copyright">
+            <p>© 2022 Fluitende Fietser</p>
+        </div>
+        <div class="moving-biker">
+            <img src="/Assets/Images/fiets-standaard-footer.png" alt="Bewegende fietser" id="biker" onload="MoveBiker()">
+        </div>
+    </footer>
+
+    <script src="/Code/script.js"></script> <!-- Link naar een extern JavaScript-bestand -->
+</body>
+</html>

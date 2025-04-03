@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Fluitende Fietser</title>
+    <link rel="stylesheet" href="/Code/style.css"> <!-- Link naar een extern CSS-bestand -->
+    <link rel="icon" href=""> <!-- Favicon -->
+</head>
+<body>
+        <header>
+        <div class="logo">
+            <img src="/Assets/Images/logo.png" alt="Logo De Fluitende Fietser"> <!-- Logo afbeelding -->
+            <h1>De Fluitende Fietser</h1>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Zoeken...">
+            <button type="button">🔍</button> <!-- Zoekknop -->
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="fietsen.html">Fietsen</a></li>
+            <li><a href="verhuur.html">Verhuur</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="over.html">Over ons</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Over ons</h1>
+        <div id="overonsBox">
+            <div class="overonsContainer" id="historieContent">
+                <h2>Historie</h2>
+                <p id="historie"></p>
+            </div>
+            <div class="overonsContainer" id="eigenaarContent">
+                <h2>Onze eigenaar</h2>
+                <p id="eigenaar"></p>
+            </div>
+            <div class="overonsContainer" id="monteursContent">
+                <h2>Onze monteurs</h2>
+                <p id="monteurs"></p>
+            </div>
+            <div class="overonsContainer" id="missieContent">
+                <h2>Onze missie</h2>
+                <p id="missieBericht"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="over.html">Over ons</a>
+            <a href="contact.html">Contact info</a>
+            <a href="mailto:info@fluitendefietser.nl">info@fluitendefietser.nl</a>
+            <a href="steun.html">Wij steunen</a>
+            <a href="ff.html">Het Fluitend Fonds</a>
+            <a href="https://www.facebook.com/fietsmagazine" target="_blank">Facebook</a>
+        </div>
+        <div class="voorwaarden">
+            <a href="algemene_voorwaarden.html" download>Algemene Voorwaarden</a>
+        </div>
+        <div class="kvk-btw">
+            <p>KVK: 88599665 | BTW NL999888492Z09</p>
+        </div>
+        <div class="copyright">
+            <p>© 2022 Fluitende Fietser</p>
+        </div>
+        <div class="moving-biker" onload="MoveBiker()">
+            <img src="/Assets/Images/fiets-standaard-footer.png" alt="Bewegende fietser" id="biker">
+        </div>
+    </footer>
+
+    <script src="/Code/script.js"></script> <!-- Link naar een extern JavaScript-bestand -->
+</body>
+</html>
